@@ -16,7 +16,9 @@ document.querySelector('.play').addEventListener('click', ()=> {
     
     function generateField(domElement, limit) {
         
-        
+        // Pulisci la griglia esistente.
+        domElement.innerHTML = '';
+
         // Creare in JavaScript una griglia 10 * 10. 
         // genero il campo da gioco 
         for (let i = 0; i < limit; i++) {
@@ -42,7 +44,7 @@ document.querySelector('.play').addEventListener('click', ()=> {
     const limit = 100
     generateField(fieldElement, limit)
 
-})
+});
 
 document.querySelector('.reset').addEventListener('click', () => {
 
